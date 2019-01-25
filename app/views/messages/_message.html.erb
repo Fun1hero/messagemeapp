@@ -1,11 +1,7 @@
-<% @messages.each do |message| %>
-  <div class="event">
-    <div class="content">
-      <div class="summary">
-        <em>
-          <%= message.user.username %></em>:
-        <%= message.body %>
-      </div>
+<div class="event">
+  <div class="content" id="message-box">
+    <div class="summary">
+      <h4 class="ui <%= message.user.color %> header"><%= message.user.username %>: <%= message.body %></h4>
     </div>
   </div>
-<% end %>
+</div>

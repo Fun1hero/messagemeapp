@@ -16,6 +16,9 @@
           <% end %>
         </div>
       </div>
+      <div class="item">
+        <%= link_to current_user.username, user_path(current_user), class:"ui primary button" %>
+      </div>
       <% if !logged_in? %>
         <div class="item">
           <div class="ui primary button">Sign In</div>
