@@ -12,3 +12,17 @@
 #message_body {
   overflow:auto;
 }
+
+.link-decorations{
+  text-decoration: none;
+  color: white;
+}
+
+.link-decorations:hover {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+.sign-in-color{
+  background-color: rgb(60, 196, 94);
+}

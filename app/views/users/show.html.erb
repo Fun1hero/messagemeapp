@@ -1,7 +1,6 @@
-<h2 class="ui header"><%= @user.username %>'s page<h2>
-<p><%= @user.color %></p>
-<div class="ui <%= @user.color %> one item inverted menu">
-  <a class="active item">
-    Home
-  </a>
+<div class="ui <%= @user.color %> compact inverted menu">
+    <h3 class="header item"><%= @user.username %>'s page<h3>
+    <% if current_user.id == @user.id %>
+      <%= link_to "Edit", edit_user_path(@user), class:"item" %>
+    <% end %>
 </div>
